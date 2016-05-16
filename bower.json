@@ -1,0 +1,22 @@
+{
+  "name": "bellox",
+  "homepage": "",
+  "authors": [
+    "bellow"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullpage.js": "~2.7.9",
+    "jquery": "~2.2.3"
+  }
+}
