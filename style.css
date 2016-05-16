@@ -21,7 +21,7 @@ html, body {margin: 0;padding: 0;}
 }
 
 .user_i img, .artwork img , .about img {
-    width: 50%;
+    width: 100%;
 }
 
 .section .about ~ copyright {
