@@ -30,3 +30,13 @@ html, body {margin: 0;padding: 0;}
     left: 50%;
     margin-left: -130px;
 }
+
+.logo ~ .nav_btn, .user_i ~ .nav_btn, .artwork  ~ .nav_btn {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 10px;
+    margin-left: -5px;
+    z-index: 999;
+}
+
