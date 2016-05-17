@@ -28,6 +28,35 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
     position: absolute;
     top:50%;
     left: 50%;
+	font-size:72px;
+	color: #303036
+}
+
+.user_i span a, .artwork span a, .about span a,
+.user_i span a:link, .artwork span a:link, .about span a:link {
+    color:#303036;
+	text-decoration:none
+}
+
+.user_i span a:hover, .artwork span a:hover, .about span a:hover {
+    color:#4caae7;
+}
+
+.user_i span a:active, .artwork span a:active, .about span a:active {
+    color:#28282d;
+}
+
+.user_i span {
+    margin-left: -171px;
+	margin-top: -90px;
+}
+.artwork span {
+    margin-left: -159px;
+	margin-top: -45px;
+}
+.about span {
+    margin-left: -123px;
+	margin-top: -90px;
 }
 
 .user_i_text {
@@ -35,7 +64,7 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
 }
 
 .user_i img, .artwork img , .about img {
-    width: 100%;
+    width: 70%;
 }
 
 .section .about ~ copyright {
@@ -43,6 +72,7 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
     bottom: 10px;
     left: 50%;
     margin-left: -130px;
+	color:#ACACAC
 }
 
 .logo ~ .nav_btn, .user_i ~ .nav_btn, .artwork  ~ .nav_btn {
