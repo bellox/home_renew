@@ -9,39 +9,32 @@
 <body>
 
 <div id="fullpage">
-    <div class="section">
-        <div class="logo">
-            <img src="img/bellox_logo.svg" alt="">
-        </div>
-        <div class="nav_btn">
-            <a href="#page2"><img src="img/arrow_down.svg" alt=""></a>
-            <a href="#page1"><img src="img/arrow_up.svg" alt=""></a>
-        </div>
-    </div>
-    <div class="section">
-        <div class="user_i">
+    <div class="section title_sec">
+        <div class="title">
             <span>USER<br>INTERFACE</span>
-            <img src="img/Braun_T1000.jpg" alt="">
-        </div>
-        <div class="nav_btn">
-            <a href="#page3"><img src="img/arrow_down.svg" alt=""></a>
-            <a href="#page2"><img src="img/arrow_up.svg" alt=""></a>
         </div>
     </div>
     <div class="section">
-        <div class="artwork">
-            <span>ARTWORK</span>
-            <img src="img/frame_02.jpg" alt="">
-        </div>
-        <div class="nav_btn">
-            <a href="#page4"><img src="img/arrow_down.svg" alt=""></a>
-            <a href="#page3"><img src="img/arrow_up.svg" alt=""></a>
+    	<div class="thumbnail" alt="">
+        	<ul>
+            	<li><img src="img/thumbnail_yamm.jpg" width="600" height="450" alt=""/></li>
+                <li><img src="img/thumbnail_Braun.jpg" width="600" height="450" alt=""/></li>
+            </ul>
+            <ul>
+            	<li><img src="img/thumbnail_smart_watch.jpg" width="600" height="450" alt=""/></li>
+                <li><img src="img/thumbnail_linkedin.jpg" width="600" height="450" alt=""/></li>
+            </ul>
+            <ul>
+            	<li><img src="img/thumbnail_webida.jpg" width="600" height="450" alt=""/></li>
+                <li><img src="img/thumbnail_instrument.jpg" width="600" height="450" alt=""/></li>
+            </ul>
+            <ul>
+            	<li><img src="img/thumbnail_tmaxwin.jpg" width="600" height="450" alt=""/></li>
+                <li><img src="img/thumbnail_car.jpg" width="600" height="450" alt=""/></li>
+            </ul>
         </div>
     </div>
-    <div class="section">
-        <div class="about">
-            <span>ABOUT<br>BELLOX</span>
-        </div>
+    <div>
         <copyright>Copyright © 2012 All Rights Reserved.</copyright>
     </div>
 </div>
@@ -51,19 +44,21 @@
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
-<script type="text/javascript" src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
-<script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
 
 <script>
 
     $(document).ready(function() {
-        $('#fullpage').fullpage();
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+    });
+	
+	$(window).resize(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
     });
 
-    $('#fullpage').fullpage({
-        anchors: ['page1', 'page2', 'page3', 'page4'],
-        menu: '#myMenu'
-    });
 
 </script>
 

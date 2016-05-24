@@ -58,13 +58,24 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
     margin-left: -123px;
 	margin-top: -90px;
 }
-
+.title span {
+	color:#303036;
+	text-decoration:none;
+	position: absolute;
+    top:50%;
+    left: 50%;
+	font-size:120px;
+	color: #303036;
+	margin-left: -285px;
+	margin-top: -149px;
+	text-align:center
+}
 .user_i_text {
 	font-size:72px
 }
 
 .user_i img, .artwork img {
-    width: 70%;
+	height: 70%;
 }
 .about img {
 	width: 30%;
@@ -78,7 +89,7 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
 	color:#ACACAC
 }
 
-.logo ~ .nav_btn, .user_i ~ .nav_btn, .artwork  ~ .nav_btn {
+.logo ~ .nav_btn, .user_i ~ .nav_btn, .artwork  ~ .nav_btn, .title  ~ .nav_btn {
     position: absolute;
     bottom: -15px;
     left: 50%;
@@ -86,4 +97,10 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
     margin-left: -5px;
     z-index: 999;
 }
+
+.thumbnail {width:1240px; margin:0 auto}
+.thumbnail ul {margin:40px 0 0 0; padding:0;}
+.thumbnail ul:after {content:''; display:block;clear:both;}
+.thumbnail ul li {float:left; list-style-type:none;}
+.thumbnail ul li:first-child {margin-right:40px}
 
