@@ -89,6 +89,14 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
 	color:#ACACAC
 }
 
+.contents ~ copyright {
+    width:100%;
+    text-align: center;
+    display: block;
+    padding: 50px 0 10px 0;
+}
+
+
 .logo ~ .nav_btn, .user_i ~ .nav_btn, .artwork  ~ .nav_btn, .title  ~ .nav_btn {
     position: absolute;
     bottom: -15px;
@@ -101,6 +109,53 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
 .thumbnail {width:1240px; margin:0 auto}
 .thumbnail ul {margin:40px 0 0 0; padding:0;}
 .thumbnail ul:after {content:''; display:block;clear:both;}
-.thumbnail ul li {float:left; list-style-type:none;}
+.thumbnail ul li {float:left; list-style-type:none;position: relative;}
 .thumbnail ul li:first-child {margin-right:40px}
+.contentsBox {
+    opacity: 0;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    width: 100%;
+    height:calc(100% - 3px);
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+}
+.contentsBox span {
+    color: #fff;
+    font-size: 72px;
+}
+.thumbnail ul li:hover .contentsBox {
+    opacity: 1;
+}
 
+.gnb {
+
+}
+.gnb ul {
+    margin: 40px 0 0 0;padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gnb ul li {list-style: none}
+.gnb ul li a {
+    margin: 0 20px;
+    font-size: 30px;
+    text-decoration: none;
+}
+.gnb ul li a {
+    text-decoration: none;
+}
+.gnb ul li a:hover {
+
+}
+.gnb ul li a:active {
+
+}
+.gnb ul li a:visited {
+
+}
