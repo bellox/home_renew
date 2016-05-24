@@ -109,8 +109,9 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
 .thumbnail {width:1240px; margin:0 auto}
 .thumbnail ul {margin:40px 0 0 0; padding:0;}
 .thumbnail ul:after {content:''; display:block;clear:both;}
-.thumbnail ul li {float:left; list-style-type:none;position: relative;}
+.thumbnail ul li {float:left; list-style-type:none;position: relative;text-align: center}
 .thumbnail ul li:first-child {margin-right:40px}
+.thumbnail ul li.single {margin: 0;width:100%}
 .contentsBox {
     opacity: 0;
     background-color: rgba(0,0,0,.6);
