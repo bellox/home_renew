@@ -206,7 +206,7 @@ html, body {margin: 0;padding: 0; font-family: '','Noto';}
   .logo ~ .nav_btn, .user_i ~ .nav_btn, .artwork  ~ .nav_btn, .title  ~ .nav_btn {
 		width: 50px;
 		margin-left: -25px;
-		bottom: -100px;
+		bottom: -110px;
 	}
   .logo ~ .nav_btn a, .user_i ~ .nav_btn a, .artwork  ~ .nav_btn a, .title  ~ .nav_btn a {
 		padding: 40px 0;
