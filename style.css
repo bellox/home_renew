@@ -115,7 +115,7 @@ html, body {margin: 0;padding: 0; font-family: '','Noto';}
 
 .logo ~ .nav_btn, .user_i ~ .nav_btn, .artwork  ~ .nav_btn, .title  ~ .nav_btn {
     position: absolute;
-    bottom: -17px;
+    bottom: -20px;
     left: 50%;
     width: 20px;
     margin-left: -10px;
