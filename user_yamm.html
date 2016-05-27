@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link type="text/css" rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section title_sec">
+        <div class="title">
+            <span>Yamm</span>
+        </div>
+    </div>
+    <div class="section contents">
+    	<div class="thumbnail" alt="">
+            <ul>
+                <li class="single">This project was personal project with friends that personally wanted solve daily worries that ‘what to eat for lunch with my colleagues and dinner with my friends’.
+The worry was defined as a problem and YAMM was designed to solve the problem.
+Through our acquaintance research, we found out that deciding a dish every lunch and sometimes dinner were quite time spending issues especially with colleagues and friends.
+YAMM service analyses personal appetite and recalculate with fellows’ to figure out their favorable dishes and recommend suggestions.
+To find out personal appetite, general dishes were analyzed by ingredients. These information was matched with each dish from almost every restaurants in Seoul, which was first target. Menu matching data was again matched with restaurants’ locations and other detailed information.
+Sub-features were provided to search specific dish from certain locations and send inquiries to fellows via messaging services.
+Service is currently closed.
+</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/yamm_long.jpg" alt=""/></li>
+            </ul>
+        	
+        </div>
+    </div>
+    <nav class="gnb">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="user.html">UI</a></li>
+            <li><a href="artwork.html">ARTWORK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <copyright>Copyright © 2012 All Rights Reserved.</copyright>
+</div>
+
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+    });
+	
+	$(window).resize(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+    });
+
+
+</script>
+
+</body>
+</html>

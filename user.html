@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link type="text/css" rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section title_sec">
+        <div class="title">
+            <span>USER<br>INTERFACE</span>
+        </div>
+    </div>
+    <div class="section contents">
+    	<div class="thumbnail" alt="">
+        	<ul>
+            	<li>
+                    <a href="user_yamm.html">
+                        <img src="img/thumbnail_yamm.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>Yamm</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                <a href="index.html">
+                        <img src="img/thumbnail_Braun.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>skeuomorphic<br>design</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+            	<li>
+                <a href="index.html">
+                        <img src="img/thumbnail_smart_watch.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>smart<br>watch</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                <a href="index.html">
+                        <img src="img/thumbnail_linkedin.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>linked in</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+            	<li>
+                <a href="index.html">
+                        <img src="img/thumbnail_webida.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>webida</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                <a href="index.html">
+                        <img src="img/thumbnail_instrument.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>fui</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+            	<li>
+                <a href="index.html">
+                        <img src="img/thumbnail_tmaxwin.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>tmax</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                <a href="index.html">
+                        <img src="img/thumbnail_car.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>car<br>av navi</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="gnb">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="artwork.html">ARTWORK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        	
+    </nav>
+    <copyright>Copyright © 2012 All Rights Reserved.</copyright>
+</div>
+
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+    });
+	
+	$(window).resize(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+    });
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link type="text/css" rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section title_sec">
+        <div class="title">
+            <span>ARTWORK</span>
+        </div>
+    </div>
+    <div class="section contents">
+    	<div class="thumbnail" alt="">
+        	<ul>
+            	<li>
+                    <a href="user_yamm.html">
+                        <img src="img/thumbnail_glass.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>glass</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                <a href="index.html">
+                        <img src="img/thumbnail_skyscraper.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>skyscraper</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+            	<li>
+                <a href="index.html">
+                        <img src="img/thumbnail_line.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>lines</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                <a href="index.html">
+                        <img src="img/thumbnail_sea.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>space</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+            	<li>
+                <a href="index.html">
+                        <img src="img/thumbnail_hole.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>hole</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                <a href="index.html">
+                        <img src="img/thumbnail_flower.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>flower</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+            	<li>
+                <a href="index.html">
+                        <img src="img/thumbnail_pyramid.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>pyramid</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                <a href="index.html">
+                        <img src="img/thumbnail_wave.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>wave</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+            	<li>
+                <a href="index.html">
+                        <img src="img/thumbnail_character.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>characters</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                <a href="index.html">
+                        <img src="img/thumbnail_self.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>self portrait</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+            	<li>
+                <a href="index.html">
+                        <img src="img/thumbnail_Labyrinth.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>labyrinth</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                <a href="index.html">
+                        <img src="img/thumbnail_teroovo.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>teroovo</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+            	<li>
+                <a href="index.html">
+                        <img src="img/thumbnail_teardrop.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>water drop</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                <a href="index.html">
+                        <img src="img/thumbnail_bellox.jpg" alt=""/>
+                        <div class="contentsBox">
+                            <span>bellox<br>identity</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="gnb">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="user.html">UI</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        	
+    </nav>
+    <copyright>Copyright © 2012 All Rights Reserved.</copyright>
+</div>
+
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+    });
+	
+	$(window).resize(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+    });
+
+
+</script>
+
+</body>
+</html>
