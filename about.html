@@ -9,41 +9,28 @@
 <body>
 
 <div id="fullpage">
-    <div class="section">
-        <div class="logo">
-            <img src="img/bellox_logo.svg" alt="">
-        </div>
-        <div class="nav_btn">
-            <a href="#page2"><img src="img/arrow_down.svg" alt=""></a>
-            <a href="#page1"><img src="img/arrow_up.svg" alt=""></a>
-        </div>
-    </div>
-    <div class="section">
-        <div class="user_i">
-            <span>USER<br>INTERFACE</span>
-            <img src="img/Braun_T1000.jpg" alt="">
-        </div>
-        <div class="nav_btn">
-            <a href="#page3"><img src="img/arrow_down.svg" alt=""></a>
-            <a href="#page2"><img src="img/arrow_up.svg" alt=""></a>
-        </div>
-    </div>
-    <div class="section">
-        <div class="artwork">
-            <span>ARTWORK</span>
-            <img src="img/frame_02.jpg" alt="">
-        </div>
-        <div class="nav_btn">
-            <a href="#page4"><img src="img/arrow_down.svg" alt=""></a>
-            <a href="#page3"><img src="img/arrow_up.svg" alt=""></a>
-        </div>
-    </div>
-    <div class="section">
-        <div class="about">
+    <div class="section title_sec">
+        <div class="title">
             <span>ABOUT<br>BELLOX</span>
         </div>
-        <copyright>Copyright © 2012 All Rights Reserved.</copyright>
     </div>
+    <div class="section contents">
+    	<div class="thumbnail" alt="">
+            <ul>
+                <li class="single">
+                	<div class="symbol"><img src="img/bellox_bi_about.svg" alt=""/></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="gnb">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="user.html">UI</a></li>
+            <li><a href="artwork.html">ARTWORK</a></li>
+        </ul>
+    </nav>
+    <copyright>Copyright © 2012 All Rights Reserved.</copyright>
 </div>
 
 
@@ -51,19 +38,21 @@
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
-<script type="text/javascript" src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
-<script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
 
 <script>
 
     $(document).ready(function() {
-        $('#fullpage').fullpage();
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+    });
+	
+	$(window).resize(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
     });
 
-    $('#fullpage').fullpage({
-        anchors: ['page1', 'page2', 'page3', 'page4'],
-        menu: '#myMenu'
-    });
 
 </script>
 

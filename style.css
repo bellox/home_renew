@@ -1,11 +1,21 @@
-html, body {margin: 0;padding: 0; font-family: 'apple';}
+html, body {margin: 0;padding: 0; font-family: '','Noto';}
 
 @font-face {
-    font-family: 'apple';
-    src: url('font/applesdgothicneo-regular-webfont.eot');
-    src: url('font/applesdgothicneo-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/applesdgothicneo-regular-webfont.woff2') format('woff2'),
-         url('font/applesdgothicneo-regular-webfont.woff') format('woff');
+    font-family: 'Noto';
+    src: url('font/NotoSans-Regular.eot');
+    src: url('font/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('font/NotoSans-Regular.woff2') format('woff2'),
+         url('font/NotoSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto';
+    src: url('font/NotoSans-Regular.eot');
+    src: url('font/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('font/NotoSans-Regular.woff2') format('woff2'),
+         url('font/NotoSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +25,7 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
     height: 100%;
 }
 
-.logo, .user_i, .artwork, .about {
+.logo, .user_i, .artwork, .about {		
     width: 100%;
     text-align: center;
     position: relative;
@@ -40,6 +50,7 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
 
 .user_i span a:hover, .artwork span a:hover, .about span a:hover {
     color:#4caae7;
+	transition: all .2s;
 }
 
 .user_i span a:active, .artwork span a:active, .about span a:active {
@@ -58,24 +69,28 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
     margin-left: -123px;
 	margin-top: -90px;
 }
-.title span {
-	color:#303036;
-	text-decoration:none;
-	position: absolute;
-    top:50%;
-    left: 50%;
-	font-size:120px;
-	color: #303036;
-	margin-left: -285px;
-	margin-top: -149px;
-	text-align:center
+.title_sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.title {
+    text-align: center;
+}
+.title span {
+    color:#303036;
+    text-decoration:none;
+    font-size:120px;
+    color: #303036;
+}
+
 .user_i_text {
 	font-size:72px
 }
 
 .user_i img, .artwork img {
-	height: 70%;
+	width: 100%;
+	max-width:1100px
 }
 .about img {
 	width: 30%;
@@ -94,27 +109,46 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
     text-align: center;
     display: block;
     padding: 50px 0 10px 0;
+	color:#ACACAC
 }
 
 
 .logo ~ .nav_btn, .user_i ~ .nav_btn, .artwork  ~ .nav_btn, .title  ~ .nav_btn {
     position: absolute;
-    bottom: -15px;
+    bottom: -17px;
     left: 50%;
-    width: 10px;
-    margin-left: -5px;
+    width: 20px;
+    margin-left: -10px;
     z-index: 999;
 }
 
-.thumbnail {width:1240px; margin:0 auto}
-.thumbnail ul {margin:40px 0 0 0; padding:0;}
+.contents {
+	padding:0 100px;
+}
+
+.thumbnail {
+	width:100%; 
+	margin:0 auto;
+}
+
+.thumbnail ul {
+	margin:40px 0 0 0; 
+	padding:0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .thumbnail ul:after {content:''; display:block;clear:both;}
-.thumbnail ul li {float:left; list-style-type:none;position: relative;text-align: center}
+.thumbnail ul li {width:50%;max-width:600px;list-style-type:none;position: relative;text-align: center}
+.thumbnail ul li img {width:100%;max-width:600px}
 .thumbnail ul li:first-child {margin-right:40px}
-.thumbnail ul li.single {margin: 0;width:100%}
+.thumbnail ul li.single {margin: 0;width:100%;max-width:940px;text-align:justify}
+.thumbnail ul li.single img {width:100%;max-width:940px}
+.thumbnail ul li.single .symbol {margin: 100px auto;width:70%;max-width:940px;text-align:center;}
 .contentsBox {
     opacity: 0;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.7);
     position: absolute;
     width: 100%;
     height:calc(100% - 3px);
@@ -127,7 +161,7 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
 }
 .contentsBox span {
     color: #fff;
-    font-size: 72px;
+    font-size: 50px;
 }
 .thumbnail ul li:hover .contentsBox {
     opacity: 1;
@@ -142,21 +176,20 @@ html, body {margin: 0;padding: 0; font-family: 'apple';}
     align-items: center;
     justify-content: center;
 }
-.gnb ul li {list-style: none}
-.gnb ul li a {
-    margin: 0 20px;
-    font-size: 30px;
+.gnb ul {list-style: none}
+.gnb ul a {
+    margin: 0 30px;
+    font-size: 50px;
     text-decoration: none;
 }
-.gnb ul li a {
-    text-decoration: none;
+.gnb ul a {
+    color:#303036;
+	text-decoration: none;
 }
-.gnb ul li a:hover {
-
+.gnb ul a:hover {
+    color:#4caae7;
+	transition: all .2s;
 }
-.gnb ul li a:active {
-
-}
-.gnb ul li a:visited {
-
+.gnb ul a:active {
+    color:#28282d;
 }
