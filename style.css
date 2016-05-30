@@ -241,7 +241,10 @@ html, body {margin: 0;padding: 0; font-family: '','Noto';}
 		max-width:940px
 	}
 	.single {
-		font-size: 20px;	
+		font-size: 25px;	
+	}
+	.thumbnail ul li.single {
+		margin: 20px 0 10px 0;
 	}
 	
 	
