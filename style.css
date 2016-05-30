@@ -148,6 +148,8 @@ html, body {margin: 0;padding: 0; font-family: '','Noto';}
 .thumbnail ul li img {width:100%;max-width:600px}
 .thumbnail ul li:first-child {margin-right:40px}
 .thumbnail ul li.single {margin: 0;width:100%;max-width:940px;text-align:justify}
+.thumbnail ul li.single2 {margin: 0;max-width:940px;text-align:center}
+.thumbnail ul li.single-text {margin: 0;width:100%;max-width:940px;text-align:center;color:#949494}
 .thumbnail ul li.single img {width:100%;max-width:940px}
 .thumbnail ul li.single .symbol {margin: 100px auto;width:70%;max-width:940px;text-align:center;}
 .contentsBox {
@@ -238,5 +240,9 @@ html, body {margin: 0;padding: 0; font-family: '','Noto';}
 		width:100%;
 		max-width:940px
 	}
+	.single {
+		font-size: 20px;	
+	}
+	
 	
 }

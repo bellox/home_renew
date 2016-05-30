@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>bellox</title>
+    <link rel="shortcut icon" href="img/favicon_bellox_b.ico">
+    <link type="text/css" rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section title_sec">
+        <div class="title">
+            <span>tmax<br>design</span>
+        </div>
+        <div class="nav_btn sub">
+            <a href="#page4"><img src="img/arrow_down.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="section contents">
+    	<div class="thumbnail" alt="">
+            <ul>
+                <li class="single">TmaxSoft Operating System GUI Design (2008~2009)<br>TmaxSoft 의 Operating System 의 Explorer Window GUI Design 으로, 다양한 방향으로 접근해본 프로젝트다. 기존 윈도와 크게 차별화 되는 부분은 없었으나 국내에서 한번도 시도해 보지 않았던 프로젝트의 GUI Design 을 경험할 수 있었다는 점으로도 충분한 메리트가 있었던 프로젝트라고 할 수 있다. 마이크로 소프트의 윈도7 수준의 그래픽을 구현하는 것을 목표로 그래픽 모티브를 설정하여 프로젝트를 시작 하였고, 외곽의 반투명 효과와, 부드러운 그림자효과 등을 그래픽이 아닌 프로그램으로 구현하도록 진행하였다.</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/tmaxwin_A.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/tmaxwin_A_1.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/tmaxwin_A_2.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/tmaxwin_B.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/tmaxwin_B_1.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/tmaxwin_D.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">tmax window</li>
+            </ul>
+            <ul>
+                <li class="single">TmaxSoft Mobile OS (2008~2009)<br>TmaxSoft Mobile Operating System GUI Design 티맥스 고유의 모바일 OS 제작을 위한 컨셉 디자인 제안 작업을 진행하였고, 메인컨셉으로 Connecting Circle 을 도출하여 Look&Feel에 대한 요소로 적용 하였다. 메인 컬러톤은 그레이와 Peacock Green 톤을 기본으로 하여 사용자가 다양한 컬러를 선택하여포인트 컬러를 지정 할 수 있도록 하는것이 컬러 컨셉이었다. 다양한 방법으로 컬러를 선택하는 GUI 를 재미있게 했던 작업이다.</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/014.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/015.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/015.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/016.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">Tmax mobile OS</li>
+            </ul>
+        	
+        </div>
+    </div>
+    <nav class="gnb">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="user.html">UI</a></li>
+            <li><a href="artwork.html">ARTWORK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <copyright>Copyright © 2012 All Rights Reserved.</copyright>
+</div>
+
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+		
+		$(window).scroll(function () {
+			var winheight = $(window).height()/4;
+			if ($(this).scrollTop() > winheight) {
+				$('.nav_btn.sub').fadeOut(650);
+			} else {
+				$('.nav_btn.sub').fadeIn(650);
+			}
+		});
+		
+    });
+	
+	$(window).resize(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+    });
+
+
+</script>
+
+</body>
+</html>
