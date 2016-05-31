@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>bellox</title>
+    <link rel="shortcut icon" href="img/favicon_bellox_b.ico">
+    <link type="text/css" rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section title_sec">
+        <div class="title">
+            <span>space</span>
+        </div>
+        <div class="nav_btn sub">
+            <a href="#page4"><img src="img/arrow_down.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="section contents">
+    	<div class="thumbnail" alt="">
+            <ul>
+                <li class="single"><img src="img/space_01.png" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_02.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">waterfall</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_03.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">triangle field</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_04.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_05.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">8 trigrams</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_06.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">river</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_08.gif" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">"o"</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_09.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">canyon of sorrow</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_10.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">sea</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_11.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">pool</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_12.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">borderline</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_13.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">the wall</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_14.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_15.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">triangle wall</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_16.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">cross</li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_17.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single"><img src="img/space_18.jpg" alt=""/></li>
+            </ul>
+            <ul>
+                <li class="single-text">big dot</li>
+            </ul>
+            
+        </div>
+    </div>
+    <nav class="gnb">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="user.html">UI</a></li>
+            <li><a href="artwork.html">ARTWORK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <copyright>Copyright © 2012 All Rights Reserved.</copyright>
+</div>
+
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+		
+		$(window).scroll(function () {
+			var winheight = $(window).height()/4;
+			if ($(this).scrollTop() > winheight) {
+				$('.nav_btn.sub').fadeOut(650);
+			} else {
+				$('.nav_btn.sub').fadeIn(650);
+			}
+		});
+		
+    });
+	
+	$(window).resize(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+    });
+
+
+</script>
+
+</body>
+</html>
