@@ -20,6 +20,7 @@
 
 <div class="page-move"></div>
 
+
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
 <script src="http://www.w3schools.com/lib/w3data.js"></script>
@@ -66,7 +67,24 @@
                 location.href.lastIndexOf('_') + 1
         );
         $('.page-move').html("<div w3-include-html="+val+"></div>")
-        $('.sub_title').text(valtext)
+		
+		if (valtext == 'swatch') {
+			valtext = 'smart<br>watch'
+		} 
+		
+		else if (valtext == 'skeuo') {
+			valtext = 'skeuomorphic<br>design'
+		}
+		
+		else if (valtext == 'linked') {
+			valtext = 'linked in'
+		}
+		
+		else if (valtext == 'car') {
+			valtext = 'car<br>av navi'
+		}
+		
+        $('.sub_title').html(valtext)
 
         $("body").fadeIn(400);
 

@@ -137,7 +137,7 @@ body {display: none}
 }
 
 .thumbnail ul {
-	margin:40px 0 0 0; 
+	margin:16px 0 0 0; 
 	padding:0;
 	display: flex;
 	align-items: center;
@@ -147,7 +147,7 @@ body {display: none}
 .thumbnail ul:after {content:''; display:block;clear:both;}
 .thumbnail ul li {width:50%;max-width:600px;list-style-type:none;position: relative;text-align: center}
 .thumbnail ul li img {width:100%;max-width:600px}
-.thumbnail ul li:first-child {margin-right:40px}
+.thumbnail ul li:first-child {margin-right:20px}
 .thumbnail ul li.single {margin: 0;width:100%;max-width:940px;text-align:justify}
 .thumbnail ul li.single2 {margin: 0;max-width:940px;text-align:center}
 .thumbnail ul li.single-text {margin: 0;width:100%;max-width:940px;text-align:center;color:#949494}

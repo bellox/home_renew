@@ -68,7 +68,20 @@
                 location.href.lastIndexOf('_') + 1
         );
         $('.page-move').html("<div w3-include-html="+val+"></div>")
-        $('.sub_title').text(valtext)
+		
+		if (valtext == 'self') {
+			valtext = 'self<br>portrait'
+		} 
+		
+		else if (valtext == 'waterdrop') {
+			valtext = 'water<br>drop'
+		}
+		
+		else if (valtext == 'bellox') {
+			valtext = 'bellox<br>identity'
+		}
+		
+        $('.sub_title').html(valtext)
         $("body").fadeIn(400);
 
         w3IncludeHTML();
