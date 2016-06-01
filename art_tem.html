@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>bellox</title>
+    <link rel="shortcut icon" href="img/favicon_bellox_b.ico">
+    <link type="text/css" rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
+</head>
+<body>
+
+<div class="section title_sec">
+    <div class="title">
+        <span class="sub_title"></span>
+    </div>
+    <div class="nav_btn sub">
+        <a href="javascript:;" class="scroll_ev"><img src="img/arrow_down.svg" alt=""></a>
+    </div>
+</div>
+<div class="page-move"></div>
+
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+<script>
+
+
+
+    $(document).ready(function() {
+
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+
+        $( ".scroll_ev" ).click(function() {
+            var body = $("html, body");
+            body.stop().animate({scrollTop:winheight}, '300', function() {
+            });
+        });
+		
+		$(window).scroll(function () {
+			var winheight = $(window).height()/4;
+			if ($(this).scrollTop() > winheight) {
+				$('.nav_btn.sub').fadeOut(650);
+			} else {
+				$('.nav_btn.sub').fadeIn(650);
+			}
+		});
+		
+    });
+	
+	$(window).resize(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+    });
+
+    $(window).load(function() {
+        var val = location.href.substr(
+                location.href.lastIndexOf('=') + 1
+        );
+
+        var valtext = location.href.substr(
+                location.href.lastIndexOf('_') + 1
+        );
+        $('.page-move').html("<div w3-include-html="+val+"></div>")
+		
+		if (valtext == 'self') {
+			valtext = 'self<br>portrait'
+		} 
+		
+		else if (valtext == 'waterdrop') {
+			valtext = 'water<br>drop'
+		}
+		
+		else if (valtext == 'bellox') {
+			valtext = 'bellox<br>identity'
+		}
+		
+        $('.sub_title').html(valtext)
+        $("body").fadeIn(400);
+
+        w3IncludeHTML();
+    });
+
+
+</script>
+
+</body>
+</html>

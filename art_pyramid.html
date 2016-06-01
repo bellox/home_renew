@@ -1,25 +1,6 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>bellox</title>
-    <link rel="shortcut icon" href="img/favicon_bellox_b.ico">
-    <link type="text/css" rel="stylesheet" href="style.css" media="all">
-    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
-</head>
-<body>
-
 <div id="fullpage">
-    <div class="section title_sec">
-        <div class="title">
-            <span>pyramid</span>
-        </div>
-        <div class="nav_btn sub">
-            <a href="#page4"><img src="img/arrow_down.svg" alt=""></a>
-        </div>
-    </div>
     <div class="section contents">
-    	<div class="thumbnail" alt="">
+        <div class="thumbnail" alt="">
             <ul>
                 <li class="single"><img src="img/pyramid_01.jpg" alt=""/></li>
             </ul>
@@ -41,7 +22,9 @@
             <ul>
                 <li class="single-text">pyramid</li>
             </ul>
-            
+            <br>
+            <br>
+            <br>
         </div>
     </div>
     <nav class="gnb">
@@ -52,41 +35,7 @@
             <li><a href="about.html">ABOUT</a></li>
         </ul>
     </nav>
+            <br>
+            <br>
     <copyright>Copyright © 2012 All Rights Reserved.</copyright>
 </div>
-
-
-
-
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
-
-<script>
-
-    $(document).ready(function() {
-		var winwidth = $(window).width();
-		var winheight = $(window).height();
-		$('.title_sec').css('width', winwidth).css('height', winheight);
-		
-		$(window).scroll(function () {
-			var winheight = $(window).height()/4;
-			if ($(this).scrollTop() > winheight) {
-				$('.nav_btn.sub').fadeOut(650);
-			} else {
-				$('.nav_btn.sub').fadeIn(650);
-			}
-		});
-		
-    });
-	
-	$(window).resize(function() {
-		var winwidth = $(window).width();
-		var winheight = $(window).height();
-		$('.title_sec').css('width', winwidth).css('height', winheight);
-    });
-
-
-</script>
-
-</body>
-</html>
