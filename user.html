@@ -22,7 +22,7 @@
     	<div class="thumbnail" alt="">
         	<ul>
             	<li>
-                    <a href="user_yamm.html">
+                    <a href="javascript:;" onclick="sub_page('user_yamm')">
                         <img src="img/thumbnail_yamm.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>Yamm</span>
@@ -139,6 +139,9 @@
         $("body").fadeIn(400);
     });
 
+    function sub_page(link) {
+        location.href="user_tem.html?link="+link
+    }
 
 </script>
 

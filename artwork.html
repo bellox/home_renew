@@ -22,7 +22,7 @@
     	<div class="thumbnail" alt="">
         	<ul>
             	<li>
-                    <a href="art_glass.html">
+                    <a href="javascript:;" onclick="sub_page('art_glass')">
                         <img src="img/thumbnail_glass.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>glass</span>
@@ -210,6 +210,10 @@
     $(window).load(function() {
         $("body").fadeIn(400);
     });
+
+    function sub_page(link) {
+        location.href="user_tem.html?link="+link
+    }
     
 </script>
 

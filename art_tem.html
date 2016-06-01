@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>bellox</title>
+    <link rel="shortcut icon" href="img/favicon_bellox_b.ico">
+    <link type="text/css" rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
+</head>
+<body>
+
+<div class="page-move"></div>
+
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+<script>
+
+
+
+    $(document).ready(function() {
+
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+		
+		$(window).scroll(function () {
+			var winheight = $(window).height()/4;
+			if ($(this).scrollTop() > winheight) {
+				$('.nav_btn.sub').fadeOut(650);
+			} else {
+				$('.nav_btn.sub').fadeIn(650);
+			}
+		});
+		
+    });
+	
+	$(window).resize(function() {
+		var winwidth = $(window).width();
+		var winheight = $(window).height();
+		$('.title_sec').css('width', winwidth).css('height', winheight);
+    });
+
+    $(window).load(function() {
+        var val = location.href.substr(
+                location.href.lastIndexOf('=') + 1
+        );
+
+        $('.page-move').html("<div class='page-move' w3-include-html="+val+"></div>")
+        $("body").fadeIn(400);
+
+        w3IncludeHTML();
+    });
+
+
+</script>
+
+</body>
+</html>
