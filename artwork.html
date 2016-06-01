@@ -15,7 +15,7 @@
             <span>ARTWORK</span>
         </div>
         <div class="nav_btn sub">
-            <a href="#page4"><img src="img/arrow_down.svg" alt=""></a>
+            <a href="javascript:;" class="scroll_ev"><img src="img/arrow_down.svg" alt=""></a>
         </div>
     </div>
     <div class="section contents">
@@ -30,7 +30,7 @@
                     </a>
                 </li>
                 <li>
-                <a href="art_skyscraper.html">
+                    <a href="javascript:;" onclick="sub_page('art_skyscraper')">
                         <img src="img/thumbnail_skyscraper.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>skyscraper</span>
@@ -40,7 +40,7 @@
             </ul>
             <ul>
             	<li>
-                <a href="art_lines.html">
+                    <a href="javascript:;" onclick="sub_page('art_lines')">
                         <img src="img/thumbnail_line.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>lines</span>
@@ -48,7 +48,7 @@
                     </a>
                 </li>
                 <li>
-                <a href="art_space.html">
+                    <a href="javascript:;" onclick="sub_page('art_space')">
                         <img src="img/thumbnail_sea.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>space</span>
@@ -58,7 +58,7 @@
             </ul>
             <ul>
             	<li>
-                <a href="art_hole.html">
+                    <a href="javascript:;" onclick="sub_page('art_hole')">
                         <img src="img/thumbnail_hole.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>hole</span>
@@ -66,7 +66,7 @@
                     </a>
                 </li>
                 <li>
-                <a href="art_flower.html">
+                    <a href="javascript:;" onclick="sub_page('art_flower')">
                         <img src="img/thumbnail_flower.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>flower</span>
@@ -76,7 +76,7 @@
             </ul>
             <ul>
             	<li>
-                <a href="art_pyramid.html">
+                    <a href="javascript:;" onclick="sub_page('art_pyramid')">
                         <img src="img/thumbnail_pyramid.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>pyramid</span>
@@ -84,7 +84,7 @@
                     </a>
                 </li>
                 <li>
-                <a href="art_wave.html">
+                    <a href="javascript:;" onclick="sub_page('art_wave')">
                         <img src="img/thumbnail_wave.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>wave</span>
@@ -94,7 +94,7 @@
             </ul>
             <ul>
             	<li>
-                <a href="art_characters.html">
+                    <a href="javascript:;" onclick="sub_page('art_characters')">
                         <img src="img/thumbnail_character.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>characters</span>
@@ -102,7 +102,7 @@
                     </a>
                 </li>
                 <li>
-                <a href="art_self.html">
+                    <a href="javascript:;" onclick="sub_page('art_self')">
                         <img src="img/thumbnail_self.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>self portrait</span>
@@ -112,7 +112,7 @@
             </ul>
             <ul>
             	<li>
-                <a href="art_labyrinth.html">
+                    <a href="javascript:;" onclick="sub_page('art_labyrinth')">
                         <img src="img/thumbnail_Labyrinth.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>labyrinth</span>
@@ -120,7 +120,7 @@
                     </a>
                 </li>
                 <li>
-                <a href="art_teroovo.html">
+                    <a href="javascript:;" onclick="sub_page('art_teroovo')">
                         <img src="img/thumbnail_teroovo.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>teroovo</span>
@@ -130,7 +130,7 @@
             </ul>
             <ul>
             	<li>
-                <a href="art_waterdrop.html">
+                    <a href="javascript:;" onclick="sub_page('art_waterdrop')">
                         <img src="img/thumbnail_teardrop.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>water drop</span>
@@ -138,7 +138,7 @@
                     </a>
                 </li>
                 <li>
-                <a href="art_mask.html">
+                    <a href="javascript:;" onclick="sub_page('art_mask')">
                         <img src="img/thumbnail_mask.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>mask</span>
@@ -148,7 +148,7 @@
             </ul>
             <ul>
             	<li>
-                <a href="art_pattern.html">
+                    <a href="javascript:;" onclick="sub_page('art_pattern')">
                         <img src="img/thumbnail_pattern.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>pattern</span>
@@ -156,7 +156,7 @@
                     </a>
                 </li>
                 <li>
-                <a href="art_bellox.html">
+                    <a href="javascript:;" onclick="sub_page('art_bellox')">
                         <img src="img/thumbnail_bellox.jpg" alt=""/>
                         <div class="contentsBox">
                             <span>bellox<br>identity</span>
@@ -189,6 +189,11 @@
 		var winwidth = $(window).width();
 		var winheight = $(window).height();
 		$('.title_sec').css('width', winwidth).css('height', winheight);
+        $( ".scroll_ev" ).click(function() {
+            var body = $("html, body");
+            body.stop().animate({scrollTop:winheight}, '300', function() {
+            });
+        });
 		
 		$(window).scroll(function () {
 			var winheight = $(window).height()/4;
