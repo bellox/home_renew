@@ -1,5 +1,6 @@
 html, body {margin: 0;padding: 0; font-family: '','Noto';}
 
+body {display: none}
 @font-face {
     font-family: 'Noto';
     src: url('font/NotoSans-Regular.eot');
