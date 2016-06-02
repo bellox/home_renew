@@ -67,6 +67,11 @@
 		var winwidth = $(window).width();
 		var winheight = $(window).height();
 		$('.title_sec').css('width', winwidth).css('height', winheight);
+        $( ".scroll_ev" ).click(function() {
+            var body = $("html, body");
+            body.stop().animate({scrollTop:winheight}, '300', function() {
+            });
+        });
 		
 		$(window).scroll(function () {
 			var winheight = $(window).height()/4;
