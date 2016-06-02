@@ -205,8 +205,7 @@ body {display: none}
 
 @media only screen 
   and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+  and (max-device-width: 667px) {
   
   .logo ~ .nav_btn, .user_i ~ .nav_btn, .artwork  ~ .nav_btn, .title  ~ .nav_btn {
 		width: 50px;
@@ -245,6 +244,9 @@ body {display: none}
 	}
 	.single {
 		font-size: 25px;	
+	}
+	.thumbnail ul li.single-text {
+		font-size: 30px
 	}
 	.thumbnail ul li.single {
 		margin: 20px 0 10px 0;
