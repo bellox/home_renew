@@ -1,16 +1,6 @@
-html, body {margin: 0;padding: 0; font-family: '','Noto';}
+html, body {margin: 0;padding: 0; font-family: 'Noto';}
 
 body {display: none}
-@font-face {
-    font-family: 'Noto';
-    src: url('font/NotoSans-Regular.eot');
-    src: url('font/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
-         url('font/NotoSans-Regular.woff2') format('woff2'),
-         url('font/NotoSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @font-face {
     font-family: 'Noto';
     src: url('font/NotoSans-Regular.eot');
@@ -116,11 +106,12 @@ body {display: none}
 
 .logo ~ .nav_btn, .user_i ~ .nav_btn, .artwork  ~ .nav_btn, .title  ~ .nav_btn {
     position: absolute;
-    bottom: -20px;
+    bottom: 2px;
     left: 50%;
     width: 20px;
     margin-left: -10px;
     z-index: 999;
+    height:20px
 }
 
 .nav_btn.sub {
@@ -255,3 +246,4 @@ body {display: none}
 	.thumbnail ul li.single-mail {width:20%;max-width:150px}
 	
 }
+
