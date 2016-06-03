@@ -146,6 +146,7 @@ body {display: none}
 .thumbnail ul li.single-text3 {margin: 0;width:100%;max-width:940px;text-align:center;color:#585858;font-size:24px}
 .thumbnail ul li.single img {width:100%;max-width:940px}
 .thumbnail ul li.single .symbol {margin: 100px auto;width:70%;max-width:940px;text-align:center;}
+.thumbnail ul li.single .symbol2 {margin: 100px auto;width:70%;max-width:400px;text-align:center;}
 .thumbnail ul li.single-mail {width:20%;max-width:100px}
 .contentsBox {
     opacity: 0;
@@ -202,14 +203,14 @@ body {display: none}
   .logo ~ .nav_btn, .user_i ~ .nav_btn, .artwork  ~ .nav_btn, .title  ~ .nav_btn {
 		width: 50px;
 		margin-left: -25px;
-		bottom: -110px;
+		bottom: 86px;
 	}
   .logo ~ .nav_btn a, .user_i ~ .nav_btn a, .artwork  ~ .nav_btn a, .title  ~ .nav_btn a {
 		padding: 40px 0;
 		display: block;
 	}
 	.nav_btn.sub {
-		bottom:20px;
+		bottom:86px;
 	}
 	.logo img {
     	width: 50%;
